@@ -6,15 +6,17 @@ package jsm;
 import jsm.utility.memoryBoxesInformation;
 
 /**
- * @author yaron
+ * @author Kessler-yaron (jron)
  *
  */
-public class Jsm {
+public class Jsm 
+{
 
 	/**
 	 * Jsm() constructor
 	 */
-	public Jsm() {
+	public Jsm() 
+	{
 		memoryBoxesInformation mbi = new memoryBoxesInformation();
 	}
 
