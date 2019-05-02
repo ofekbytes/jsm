@@ -1,4 +1,4 @@
-package jsm.utility;
+package jsm.utility.memoryBoxesInformation;
 
 public class memoryBoxesInformation 
 {
@@ -20,6 +20,9 @@ public class memoryBoxesInformation
         System.out.println("Double (64 bit / 8 byte) == " + Double.MIN_VALUE + " <--> " + Double.MAX_VALUE);
 	}
 
+	/*
+	 * memoryBoxesInformation() constructor
+	 */
 	public memoryBoxesInformation() 
 	{
 		fnPrimitiveVariable();

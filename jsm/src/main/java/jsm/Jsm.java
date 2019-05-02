@@ -3,7 +3,7 @@
  */
 package jsm;
 
-import jsm.utility.memoryBoxesInformation;
+import jsm.utility.randomNumber.RandomNumbers;
 
 /**
  * @author Kessler-yaron (jron)
@@ -11,20 +11,13 @@ import jsm.utility.memoryBoxesInformation;
  */
 public class Jsm 
 {
-
-	/**
-	 * Jsm() constructor
-	 */
-	public Jsm() 
-	{
-		memoryBoxesInformation mbi = new memoryBoxesInformation();
+	// Jsm() constructor
+	public Jsm() {
+		RandomNumbers rn = new RandomNumbers(1,22);
 	}
 
-	public static void main(String[] args) 
-	{
-		
+	// jsm() main() method.
+	public static void main(String[] args) {
 		Jsm jsm = new Jsm();
-
 	}
-
 }
