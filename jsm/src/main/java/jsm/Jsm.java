@@ -4,6 +4,7 @@
 package jsm;
 
 import jsm.utility.randomNumber.RandomNumbers;
+import jsm.utility.temp.Test;
 
 /**
  * @author Kessler-yaron (jron)
@@ -19,5 +20,6 @@ public class Jsm
 	// jsm() main() method.
 	public static void main(String[] args) {
 		Jsm jsm = new Jsm();
+		Test t = new Test();
 	}
 }
