@@ -4,9 +4,20 @@ import java.util.Random;
 
 public class RandomNumbers extends RandomNumbersVariableGS {
 
-	public RandomNumbers(int min, int max) {
-		setMinimumNumber(min);
-		setMaximumNumber(max);
+    /*
+     * 	RandomNumbers - constructor
+     */
+	
+	private int minNumber;
+	private int maxNumber;
+	private int intResult;
+	private int totalNumber;
+	
+	
+	public RandomNumbers ()
+	{
+		setMinimumNumber(minNumber);
+		setMaximumNumber(maxNumber);
 		GenerateRandomNumbers();
 		printRandomNumber();
 	}
