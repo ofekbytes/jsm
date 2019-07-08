@@ -8,8 +8,8 @@ public class RandomNumbers extends RandomNumbersVariableGS {
      * 	RandomNumbers - constructor
      */
 	
-	private int minNumber;
-	private int maxNumber;
+	private int minNumber = 1;
+	private int maxNumber = 42;
 	private int intResult;
 	private int totalNumber;
 	
