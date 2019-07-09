@@ -13,6 +13,7 @@ public abstract interface InterfaceRandomNumbers {
 
 	int minimumNumber=0;
 	int maximumNumber=0;
+	int totalNumbers=0;
 	int intResult=0;
 	//int totalNumbers=0;
 	

@@ -2,7 +2,7 @@ package jsm.utility.randomNumber;
 
 import java.util.ArrayList;
 
-public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers{
+public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers {
 
 	private int minimumNumber;
 	private int maximumNumber;
@@ -17,7 +17,6 @@ public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers{
 		this.minimumNumber = minimumNumber;
 	}
 
-
 	public int getMaximumNumber() {
 		return maximumNumber;
 	}
@@ -26,7 +25,14 @@ public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers{
 		this.maximumNumber = maximumNumber;
 	}
 
-	
+	public int getTotalNumbers() {
+		return totalNumbers;
+	}
+
+	public void setTotalNumbers(int totalNumbers) {
+		this.totalNumbers = totalNumbers;
+	}
+
 	public int getIntResult() {
 		return intResult;
 	}
@@ -34,5 +40,5 @@ public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers{
 	public void setIntResult(int intResult) {
 		this.intResult = intResult;
 	}
-	
+
 }

@@ -3,6 +3,7 @@
  */
 package jsm;
 
+import jsm.utility.math.FizzBuzz;
 import jsm.utility.randomNumber.RandomNumbers;
 
 /**
@@ -14,7 +15,8 @@ public class Jsm
 	// Jsm() constructor
 	public Jsm() {
 //		RandomNumbers rn = new RandomNumbers(1,22);		
-		RandomNumbers rn = new RandomNumbers();
+		//RandomNumbers rn = new RandomNumbers();
+		FizzBuzz fb = new FizzBuzz();
 		
 	}
 
