@@ -5,19 +5,21 @@ import java.util.logging.Logger;
 public class FizzBuzz {
 
 	public FizzBuzz() {
-		
-		// Task 1: Even -or- odd  number //
-		// numberEvenOrOdd(); 
-		
+
+		// Task 1: Even -or- odd number //
+		 numberEvenOrOdd();
+
 		// Task #2: fizz -or- buzz //
-		// fizzFuzzChecker(); 
-		
+		// fizzFuzzChecker();
+
 		// Task 3: number divided by 2, 3 ,5 ,10 print result. //
-		 dividedNumberByX();
-		
+		// dividedNumberByX();
+
 		// Task 4: number divided by 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 print result.
-		// dividedNumberByoneToZero(); 	 
-		
+		// dividedNumberByoneToZero();
+
+		// Task 5: like Task 4 with a nice logic
+		//dividedNumberByoneToZeroNL();
 	}
 
 // Task 1: Even -or- odd  number.
@@ -66,14 +68,14 @@ public class FizzBuzz {
 			}
 			if ((number % 5) == 0) {
 				System.out.print(" ,5 ");
-			}			
+			}
 			if ((number % 10) == 0) {
 				System.out.print(" ,10 ");
 			}
 			System.out.println(" ");
 		}
-	}
-	
+	} // dividedNumberByX() //
+
 	// Task 4: number divided by 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 print result.
 	private void dividedNumberByoneToZero() {
 		for (int number = 1; number <= 100; number++) {
@@ -92,7 +94,7 @@ public class FizzBuzz {
 			}
 			if ((number % 5) == 0) {
 				System.out.print(" ,5 ");
-			}			
+			}
 			if ((number % 6) == 0) {
 				System.out.print(" ,6 ");
 			}
@@ -110,11 +112,20 @@ public class FizzBuzz {
 			}
 			System.out.println(" ");
 		}
-	}
+	} // dividedNumberByoneToZero() //
+
 	
-}
+	// Task 5: like Task 4 with a nice logic
+	private void dividedNumberByoneToZeroNL() {
+		for (int number = 1; number <= 100; number++) {
+			System.out.print(+number);
+			for (int i = 1; i <= 10; i++) {
+				if ((number % i) == 0) {
+					System.out.print(" ," + i + " ");
+				}
+			}
+			System.out.println(" ");
+		}
+	} // dividedNumberByoneToZeroNL() //
 
-
-
-
-
+} //class
