@@ -42,20 +42,20 @@ public class RandomNumbers extends RandomNumbersVariableGS {
 	@Override
 	public void printRandomNumber() {
 		for (int i = 0; i < listRadmonNumber.size(); i++) {
-			
+
 			// if i bing then zero/0 add print ','
 			if (i > 0) {
 				System.out.print(", ");
 			}
-			
+
 			// print random numbers //
 			System.out.print(listRadmonNumber.get(i));
-			
+
 			// end random number with a dot '.' //
-			if ( i == (listRadmonNumber.size() - 1) ) {
+			if (i == (listRadmonNumber.size() - 1)) {
 				System.out.println(" ... ");
 			}
-				
+
 		}
 
 	}

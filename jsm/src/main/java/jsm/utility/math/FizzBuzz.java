@@ -5,15 +5,15 @@ import java.util.logging.Logger;
 public class FizzBuzz {
 
 	public FizzBuzz() {
-
+		
 		// Task 1: Even -or- odd number //
-		 numberEvenOrOdd();
+		// numberEvenOrOdd();
 
-		// Task #2: fizz -or- buzz //
-		// fizzFuzzChecker();
+		// Task #2: zig -or- zag //
+		//zigZagChecker();
 
 		// Task 3: number divided by 2, 3 ,5 ,10 print result. //
-		// dividedNumberByX();
+		 dividedNumberByX();
 
 		// Task 4: number divided by 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 print result.
 		// dividedNumberByoneToZero();
@@ -21,8 +21,9 @@ public class FizzBuzz {
 		// Task 5: like Task 4 with a nice logic
 		//dividedNumberByoneToZeroNL();
 	}
-
+//
 // Task 1: Even -or- odd  number.
+	
 // even (%2==0) , odd (!(%==2))
 	private void numberEvenOrOdd() {
 		System.out.println("");
@@ -36,20 +37,21 @@ public class FizzBuzz {
 		}
 	}
 
-// Task #2: fizz -or- buzz.
+// Task #2: zig -or- zag.
 // iterate numbers between: 1-100 and print:
-// number x3 == "fizz"
-// number x x5 == "buzz"
-	public void fizzFuzzChecker() {
+// number x3 == "zig"
+// number x5 == "zag"
+// number x3 and x5 == "zag"	
+	public void zigZagChecker() {
 		System.out.println("");
 		for (int number = 1; number < 99; number++) {
 			System.out.print(" . " + number + " . ");
 			if (((number % 3) == 0) && ((number % 5) == 0)) {
-				System.out.print(" 'fizz-buzz' ");
+				System.out.print(" 'zig-zag' ");
 			} else if ((number % 3) == 0) {
-				System.out.print(" 'fizz' ");
+				System.out.print(" 'zig' ");
 			} else if ((number % 5) == 0) {
-				System.out.print(" 'buzz' ");
+				System.out.print(" 'zag' ");
 			}
 			System.out.println(" "); // new line
 		}
@@ -129,3 +131,4 @@ public class FizzBuzz {
 	} // dividedNumberByoneToZeroNL() //
 
 } //class
+

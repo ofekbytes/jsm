@@ -11,12 +11,12 @@ import java.util.ArrayList;
  */
 public abstract interface InterfaceRandomNumbers {
 
-	int minimumNumber=0;
-	int maximumNumber=0;
-	int totalNumbers=0;
-	int intResult=0;
-	//int totalNumbers=0;
-	
+	int minimumNumber = 0;
+	int maximumNumber = 0;
+	int totalNumbers = 0;
+	int intResult = 0;
+	// int totalNumbers=0;
+
 	ArrayList<Integer> listRadmonNumber = new ArrayList<Integer>();
 
 	void printRandomNumber();
