@@ -17,9 +17,9 @@ public class Jsm
 	// Jsm() constructor
 	public Jsm() {
 //		RandomNumbers rn = new RandomNumbers(1,22);		
-		//RandomNumbers rn = new RandomNumbers();
-		FizzBuzz fb = new FizzBuzz();
-		memoryBoxesInformation mbi = new memoryBoxesInformation();
+		RandomNumbers rn = new RandomNumbers();
+		//FizzBuzz fb = new FizzBuzz();
+		//memoryBoxesInformation mbi = new memoryBoxesInformation();
 		
 	}
 
