@@ -6,8 +6,13 @@ public abstract class RandomNumbersVariableGS implements InterfaceRandomNumbers 
 
 	private int minimumNumber;
 	private int maximumNumber;
+	private int minimumStrongNumber;
+	private int maximumStrongNumber;
+	
+	private int totalNumbers;	
 	private int intResult;
-	private int totalNumbers;
+
+	
 
 	public int getMinimumNumber() {
 		return minimumNumber;

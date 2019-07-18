@@ -14,9 +14,9 @@ public class RandomNumbers extends RandomNumbersVariableGS {
 //	private int totalNumber;
 
 	public RandomNumbers() {
-
+        // 6 (1-37) + 1 (1-7)
 		setMinimumNumber(1);
-		setMaximumNumber(42);
+		setMaximumNumber(37);
 		setTotalNumbers(6);
 		GenerateRandomNumbers();
 		printRandomNumber();
