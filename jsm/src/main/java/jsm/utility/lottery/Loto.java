@@ -1,30 +1,46 @@
 package jsm.utility.lottery;
 
-public class Loto implements InterfaceLoto {
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Loto { //implements InterfaceLoto {
 
 	public Loto() {
 		
 	}
 
-	@Override
+
 	public void createLotoNumbers() {
-		// TODO Auto-generated method stub
+		ArrayList<Integer> alNumbers = new ArrayList<Integer>();
+		
+		int result = 0;
+		
+		result = createRandomNumber(1, 37);
+		result = createRandomNumber(1,7);
 		
 	}
 
-	@Override
-	public int createRandomNumber(int intMinNumber, int intMaxNumber) {
-		// TODO Auto-generated method stub
-		return 0;
+
+//	public int createRandomNumber(int intMinNumber, int intMaxNumber) {
+//		Random random = new Random();
+
+//		do {
+//			setIntResult(random.nextInt(intMaxNumber() + 1 - intMinNumber()) + intMinNumber());
+//		} while (listRadmonNumber.contains(getIntResult()) == true);
+//
+//		listRadmonNumber.add(getIntResult());
+//		
+//		return 0;
+		
 	}
 
-	@Override
+
 	public boolean checkIfNumberExists(int number) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
+
 	public void createLotoStrongNumber() {
 		// TODO Auto-generated method stub
 		

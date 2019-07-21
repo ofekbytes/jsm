@@ -24,15 +24,15 @@ public interface InterfaceLoto {
 	final int strongLotteryMaximumRangeNumber = 7;
 	final int strongLotteryMaximumChosenNumbers = 1;
 
-	void createLotoNumbers();
-
-	int createRandomNumber(int intMinNumber, int intMaxNumber);
-
-	boolean checkIfNumberExists(int number);
-
-	// if not exist add to array
-	// else create a new number
-	void createLotoStrongNumber();
+//	void createLotoNumbers();
+//
+//	int createRandomNumber(int intMinNumber, int intMaxNumber);
+//
+//	boolean checkIfNumberExists(int number);
+//
+//	// if not exist add to array
+//	// else create a new number
+//	void createLotoStrongNumber();
 
 	// loop 1-6
 	// create a random number
