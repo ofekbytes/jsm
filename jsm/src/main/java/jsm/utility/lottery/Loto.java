@@ -32,7 +32,7 @@ public class Loto { //implements InterfaceLoto {
 //		
 //		return 0;
 		
-	}
+//	}
 
 
 	public boolean checkIfNumberExists(int number) {
