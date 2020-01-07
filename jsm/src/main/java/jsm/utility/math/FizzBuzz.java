@@ -7,19 +7,19 @@ public class FizzBuzz {
 	public FizzBuzz() {
 		
 		// Task 1: Even -or- odd number //
-		 numberEvenOrOdd();
+//		 numberEvenOrOdd();
 
 		// Task #2: zig -or- zag //
-		//zigZagChecker();
+//		zigZagChecker();
 
 		// Task 3: number divided by 2, 3 ,5 ,10 print result. //
 //		 dividedNumberByX();
 
 		// Task 4: number divided by 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 print result.
-		// dividedNumberByoneToZero();
+//		 dividedNumberByoneToZero();
 
 		// Task 5: like Task 4 with a nice logic
-		//dividedNumberByoneToZeroNL();
+		dividedNumberByoneToZeroNL();
 	}
 //
 // Task 1: Even -or- odd  number.

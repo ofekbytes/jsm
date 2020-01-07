@@ -3,10 +3,13 @@
  */
 package jsm;
 
+import java.math.MathContext;
+
 import jsm.utility.*;
 import jsm.utility.math.FizzBuzz;
 import jsm.utility.memoryBoxesInformation.memoryBoxesInformation;
 import jsm.utility.randomNumber.RandomNumbers;
+import jsm.utility.temp.Utf16;
 
 /**
  * @author Kessler-yaron (jron)
@@ -17,7 +20,10 @@ public class Jsm
 	// Jsm() constructor
 	public Jsm() {
 //		RandomNumbers rn = new RandomNumbers(1,22);		
-		RandomNumbers rn = new RandomNumbers();
+//		RandomNumbers rn = new RandomNumbers();
+		FizzBuzz fb = new FizzBuzz();
+	
+		
 		//FizzBuzz fb = new FizzBuzz();
 		//memoryBoxesInformation mbi = new memoryBoxesInformation();
 		
