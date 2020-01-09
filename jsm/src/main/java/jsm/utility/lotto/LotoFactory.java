@@ -4,21 +4,19 @@ public class LotoFactory {
 	
 	public LotoNumbers getNumbers(String numberType)
 	{
+		//TODO:
+		// validate null and space check point is working properly.
 		if (numberType == null) {
 			return null;
 		}
 		
 		switch (numberType) {
 		case "regular":
-			//System.out.println("output: regular");
 			return new RgularNumbers();
 		case "strong":
-			//System.out.println("output: strong");
 			return new StrongNumber();
 		default:
-			//System.out.println("output: default");
 			return null; 
 		}
-		//return null;
 	} 
 } 
