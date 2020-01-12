@@ -1,5 +1,7 @@
 
-Lotto lottery - Specification document
+---[Lotto]---
+
+*** lottery - Specification document ***
 
 * In the lottery form there are 14 tables, 
   * Each table have 38 cells of numbers 
