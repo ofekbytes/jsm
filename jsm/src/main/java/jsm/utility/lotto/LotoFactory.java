@@ -7,6 +7,7 @@ public class LotoFactory {
 		//TODO:
 		// validate null and space check point is working properly.
 		if (numberType == null) {
+			System.out.println("null");
 			return null;
 		}
 		
@@ -16,6 +17,7 @@ public class LotoFactory {
 		case "strong":
 			return new StrongNumber();
 		default:
+			System.out.println("null");
 			return null; 
 		}
 	} 

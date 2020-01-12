@@ -12,32 +12,33 @@ public class RgularNumbers implements LotoNumbers {
 	private ArrayList<Integer> alRegularNumberList = new ArrayList<Integer>();
 	
 	
+	/*
+	 * generate() - Generate 6 regular numbers, using a loop and generateRandomNumber() method.
+	 * @see jsm.utility.lotto.LotoNumbers#generate()
+	 */
 	@Override
 	public void generate() {
 		
 		int temp = 0;
-		
-//		System.out.println("generate a --> Regular Numbers");
-		
+			
 		for (int i=min; i<= total;)
 		{
 			temp = generateRandomNumber();
-//			if(alRegularNumberList.contains(Integer.valueOf(temp) ) ) {
 			
 			if(alRegularNumberList.contains(temp) == false )  {
-//				System.out.println("not exist >> " + temp);
-				System.out.print(temp + ", ");
+//				System.out.print(temp + ", ");
+				System.out.printf("[%3d], ", temp);
 				alRegularNumberList.add(temp);
 				temp = 0;
 				i++;
 			}
-//			else {
-//				System.out.println("Exists >> " + temp );
-//			}
 		}
 		
 	}
 	
+	/*
+	 * generateRandomNumber() - generate Random Number. 
+	 */
 	private int generateRandomNumber()
 	{
 		int number = 0;
@@ -45,7 +46,7 @@ public class RgularNumbers implements LotoNumbers {
 		Random r = new Random();
 		number = (r.nextInt((max - min) + 1) + min);
 		
-		return number;
-		
+		return number;		
 	}
-}
+	
+} //class//

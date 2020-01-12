@@ -23,7 +23,9 @@ public class StrongNumber implements LotoNumbers {
 		Random r = new Random();
 		setNumberGenerated(r.nextInt((max - min) + 1) + min);
 		
-		System.out.print(getNumberGenerated());
+//		System.out.print(getNumberGenerated());
+		System.out.printf("......[%2d]", getNumberGenerated());
+		
 	}
 	
 }
