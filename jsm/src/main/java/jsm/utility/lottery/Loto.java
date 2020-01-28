@@ -6,7 +6,7 @@ import java.util.Random;
 public class Loto { //implements InterfaceLoto {
 
 	public Loto() {
-		
+		System.out.println("wtf - change -or- erase this package '<lottery> ");
 	}
 
 

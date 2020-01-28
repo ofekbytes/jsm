@@ -3,8 +3,8 @@ package jsm.utility.lotto;
 public class LotoFactory {
 
 	public LotoNumbers getNumbers(String numberType) {
-		// TODO:
-		// validate null and space check point is working properly.
+
+		// TODO: validate null and space check point is working properly.
 		if (numberType == null) {
 			System.out.println("null");
 			return null;

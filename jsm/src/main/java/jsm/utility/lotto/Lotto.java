@@ -36,15 +36,16 @@ public class Lotto {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("Israel lottery - Generate a Random Numbers: ");
-		String add = "0";
 		Lotto lotto = new Lotto();
+		String add = "0";
+		System.out.println("Israel lottery - Generate a Random Numbers: ");
+
 
 //		System.out.println("");
 		for (int i = 0; i < 14; i++) {
 			System.out.println("");
-			System.out.printf("..%s%d..", add, (i + 1));
-			lotto.execute();
+			System.out.printf("..%s%d..", add, (i + 1)); //index number: ..XX.. //
+			lotto.execute(); 
 
 			// add "0" to number smaller then 10.
 			if ((i + 1) < 9)
