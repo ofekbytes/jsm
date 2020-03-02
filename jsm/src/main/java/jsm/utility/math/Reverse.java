@@ -35,26 +35,30 @@ public class Reverse {
 	private int reverseNumber(int totalDigits, int sourceNumber) {
 		
 		int srcNumber = sourceNumber;
-		int returnNumber = 1;
+		int returnNumber = 0;
 		int currentDigit = 0;
+		
+		System.out.println("totalDigits::: " + totalDigits);
 		
 		for (int number=totalDigits; number>0; number--) {
 			
 			currentDigit = srcNumber % 10;
 			
-			returnNumber = (returnNumber * (number * 10));
-			
+			System.out.println(">>>>" + powerOf(number));
 			srcNumber = srcNumber / 10; 
 			
-			System.out.println("currentDigit >> " + currentDigit);
-			
-			
-			
+			System.out.println("currentDigit >> " + currentDigit + "  " + returnNumber);						
 		}
 		
 		return returnNumber;
 	}
 
+	private int powerOf(int powerOf) {
+		int result = 0;
+		
+		
+		return result;
+	}
 	
 	/**
 	 **
@@ -75,3 +79,4 @@ public class Reverse {
 	}
 
 }// class
+
