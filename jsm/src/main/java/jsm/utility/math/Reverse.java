@@ -4,7 +4,7 @@ public class Reverse {
 
 	// constructor //
 	public Reverse() {
-		ReversePrimitiveNumber(123456);
+		ReversePrimitiveNumber(123450);
 	}
 
 	// constructor + argument //
@@ -12,6 +12,7 @@ public class Reverse {
 		ReversePrimitiveNumber(sourceNumber);
 	}
 
+	
 	/**
 	 **
 	 ** @param sourceNumber
@@ -29,22 +30,25 @@ public class Reverse {
 	}
 	
 	
-	
-	
-	
+	/***
+	 * 
+	 * @param totalDigits
+	 * @param sourceNumber
+	 * @return
+	 */
 	private int reverseNumber(int totalDigits, int sourceNumber) {
 		
 		int srcNumber = sourceNumber;
 		int returnNumber = 0;
-		int currentDigit = 0;
+		int currentDigit;
 		
 		System.out.println("totalDigits::: " + totalDigits);
 		
-		for (int number=totalDigits; number>0; number--) {
+		for (int number=totalDigits-1; number>-1; number--) {
 			
 			currentDigit = srcNumber % 10;
 			
-			System.out.println(">>>>" + powerOf(number));
+			returnNumber += (currentDigit * powerOf(number)) ;
 			srcNumber = srcNumber / 10; 
 			
 			System.out.println("currentDigit >> " + currentDigit + "  " + returnNumber);						
@@ -53,12 +57,7 @@ public class Reverse {
 		return returnNumber;
 	}
 
-	private int powerOf(int powerOf) {
-		int result = 0;
-		
-		
-		return result;
-	}
+	
 	
 	/**
 	 **
@@ -78,5 +77,15 @@ public class Reverse {
 		return totalDigits;
 	}
 
+	
+	/***
+	 * 
+	 * @param powerOf
+	 * @return
+	 */
+	private int powerOf(int powerOf) {
+		return ((int)Math.pow(10, powerOf));
+	}
+	
 }// class
 
