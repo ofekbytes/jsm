@@ -1,0 +1,11 @@
+
+
+// SELECT //
+SELECT * FROM test1.customer;
+
+
+// UPDATE //
+UPDATE `test1`.`customer` SET `first_name`='yifat', `last_name`='harel' WHERE `cust_id`='3';
+
+// UPDATE //
+UPDATE `test1`.`customer` SET `first_name`='noam', `last_name`='meiri' WHERE `cust_id`='4';
