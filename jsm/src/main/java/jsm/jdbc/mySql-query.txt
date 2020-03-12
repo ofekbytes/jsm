@@ -3,10 +3,21 @@
 - SELECT
 
 -- SELECT ALL
+private String stQuery = "select * from customer";
+
+-- SELECT ALL
 SELECT * FROM test1.customer;
+
+-- SELECT ALL - TOTAL Records
+select count(*) as 'Total-Records' from customer
 
 
 - UPDATE
+
+-- UPDATE email in cust_id=7 
+private String stQuery = "update customer set email='hd@isracard.co.il' WHERE cust_id='7' ";
+
+
 
 -- UPDATE - update (change) column data - 'first_name' and `last_name` 
 UPDATE `test1`.`customer` SET `first_name`='yifat', `last_name`='harel' WHERE `cust_id`='3';
@@ -28,7 +39,17 @@ UPDATE `test1`.`customer` SET `email`='nMeiri@isracard.co.il' WHERE `cust_id`='4
 ALTER TABLE `test1`.`customer` 
 ADD COLUMN `email` VARCHAR(45) NOT NULL AFTER `cust_id`;
 
+
+
 - INSERT
 
 -- INSERT - insert new record.
+private String stQuery = "insert into customer (first_name, last_name, phone, email) value ('jojo','dog','03-689-5711','jojo@isracard.co.il')";
+
+-- INSERT - insert new record.
 INSERT INTO `test1`.`customer` (`first_name`, `last_name`, `phone`, `cust_id`, `email`) VALUES ('gal', 'sapan', '03-689-1111', '5', 'gSapan@isracard.co.il');
+
+-- INSERT - insert new record.
+insert into customer (first_name, last_name, phone, email) value ('suzie','assa','03-689-5711','suzie@isracard.co.il')
+
+

@@ -8,6 +8,7 @@ import java.sql.Statement;
 
 public class Jdbc_ex01 {
 
+	//SELECT//
 	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String user = "dbadmin";
 	private String password = "2Wsxcde3";
@@ -60,6 +61,10 @@ public class Jdbc_ex01 {
 
 	}
 
+	/***
+	 * main - 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Jdbc_ex01 j = new Jdbc_ex01();
 
