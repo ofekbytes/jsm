@@ -6,14 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Jdbc {
+public class Jdbc_ex01 {
 
 	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String user = "dbadmin";
 	private String password = "2Wsxcde3";
 	private String stQuery = "select * from customer";
 
-	public Jdbc() {
+	public Jdbc_ex01() {
 
 		try {
 
@@ -37,7 +37,8 @@ public class Jdbc {
 				System.out.print("" + myResultSet.getString("cust_id"));
 				System.out.print(", " + myResultSet.getString("first_name"));
 				System.out.print(", " + myResultSet.getString("last_name"));
-				System.out.print("," + myResultSet.getString("phone"));
+				System.out.print(", " + myResultSet.getString("phone"));
+				System.out.print(", " + myResultSet.getString("email"));				
 				System.out.println("");
 
 			}
@@ -60,7 +61,7 @@ public class Jdbc {
 	}
 
 	public static void main(String[] args) {
-		Jdbc j = new Jdbc();
+		Jdbc_ex01 j = new Jdbc_ex01();
 
 	}
 
