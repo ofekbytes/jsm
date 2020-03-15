@@ -1,4 +1,4 @@
-package jsm.jdbc;
+package jsm.jdbc.examples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Jdbc_ex01 {
+public class Jdbc_01_01_select {
 
 	//SELECT//
 //	private String dbUrl = "jdbc:mysql://localhost/test1";
@@ -16,7 +16,7 @@ public class Jdbc_ex01 {
 	private String password = "2Wsxcde3";
 	private String stQuery = "select * from customer";
 
-	public Jdbc_ex01() {
+	public Jdbc_01_01_select() {
 
 		try {
 
@@ -31,6 +31,9 @@ public class Jdbc_ex01 {
 			// Execute Sql Query //
 			// import java.sql.ResultSet; //
 			ResultSet myResultSet = myStatement.executeQuery(stQuery);
+			
+			// new line //
+			System.out.println("");
 
 			///
 			// Process Result set //
@@ -68,7 +71,7 @@ public class Jdbc_ex01 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Jdbc_ex01 j = new Jdbc_ex01();
+		Jdbc_01_01_select j = new Jdbc_01_01_select();
 
 	}
 

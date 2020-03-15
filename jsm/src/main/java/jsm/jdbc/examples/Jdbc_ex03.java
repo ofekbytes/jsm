@@ -1,4 +1,4 @@
-package jsm.jdbc;
+package jsm.jdbc.examples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
