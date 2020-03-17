@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="jsm/utility/temp/" kind="src" path="jsm/src/main/java"/>
+	<classpathentry kind="src" path="jsm/src/main/java/jsm/utility/temp"/>
+	<classpathentry kind="output" path="jsm/target/classes"/>
+</classpath>
