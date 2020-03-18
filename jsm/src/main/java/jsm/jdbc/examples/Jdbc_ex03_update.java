@@ -12,7 +12,7 @@ public class Jdbc_ex03_update {
 	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String user = "dbadmin";
 	private String password = "2Wsxcde3";
-	private String stQuery = "update customer set email='hd@isracard.co.il' WHERE cust_id='7' ";
+	private String stQuery = "update customer set email='hd@isracard.co.il' WHERE first_name='jojo' ";
 	
 	public Jdbc_ex03_update() { 
 

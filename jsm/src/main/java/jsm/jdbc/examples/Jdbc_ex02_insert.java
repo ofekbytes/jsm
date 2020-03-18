@@ -9,9 +9,11 @@ import java.sql.Statement;
 public class Jdbc_ex02_insert {
 
 	//INSERT//
+	
+	//SELECT//
 	private String dbUrl = "jdbc:mysql://localhost/test1";
-	private String user = "dbadmin";
-	private String password = "2Wsxcde3";
+	private String user = "jron";  //"dbadmin";
+	private String password = "koskas@1974.com"; //"2Wsxcde3";
 	private String stQuery = "insert into customer (first_name, last_name, phone, email) value ('jojo','dog','03-689-5711','jojo@isracard.co.il')";
 	
 	

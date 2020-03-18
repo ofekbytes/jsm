@@ -9,11 +9,9 @@ import java.sql.Statement;
 public class Jdbc_01_01_select {
 
 	//SELECT//
-//	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String dbUrl = "jdbc:mysql://localhost/test1";
-	
-	private String user = "dbadmin";
-	private String password = "2Wsxcde3";
+	private String user = "jron";  //"dbadmin";
+	private String password = "koskas@1974.com"; //"2Wsxcde3";
 	private String stQuery = "select * from customer";
 
 	public Jdbc_01_01_select() {
