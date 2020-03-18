@@ -483,13 +483,13 @@ public class Jdbc {
 
 
 
-- Prepared Statements
--- Prepared Statements: create -  
--- Prepared Statements: setting parameter values
+- Prepared Statements: 
+-- Prepared Statements: create - 
+-- Prepared Statements: setting parameter values - 
 -- Prepared Statements: execute - 
 -- Prepared Statements: reusing -  
 
-- Prepared Statements is :
+- Prepared Statements is : 
 -- a precompiled sql statment.
 -- easy set SQL parameter values.
 -- prevent against SQL dependency injection attacks.
