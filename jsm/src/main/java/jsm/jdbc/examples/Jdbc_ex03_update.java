@@ -6,16 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Jdbc_ex02 {
+public class Jdbc_ex03_update {
 
-	//INSERT//
+	//UPDATE//
 	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String user = "dbadmin";
 	private String password = "2Wsxcde3";
-	private String stQuery = "insert into customer (first_name, last_name, phone, email) value ('jojo','dog','03-689-5711','jojo@isracard.co.il')";
+	private String stQuery = "update customer set email='hd@isracard.co.il' WHERE cust_id='7' ";
 	
-	
-	public Jdbc_ex02() { 
+	public Jdbc_ex03_update() { 
 
 		try {
 
@@ -26,11 +25,10 @@ public class Jdbc_ex02 {
 			Statement myStatement = myConnection.createStatement();
 
 			// executeUpdate - execute query //
-			int rowsAffected =  myStatement.executeUpdate(stQuery);
+			int rowsAffected = myStatement.executeUpdate(stQuery);
 			
-			System.out.println("");
 			System.out.println("rows Affected :: " + rowsAffected);
-			System.out.println("insert complete");
+			System.out.println("update complete");
 
 
 			// Statement close//
@@ -52,7 +50,7 @@ public class Jdbc_ex02 {
 	}
 
 	public static void main(String[] args) {
-		Jdbc_ex02 j = new Jdbc_ex02();
+		Jdbc_ex03_update j = new Jdbc_ex03_update();
 	}
 
 }

@@ -6,30 +6,29 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Jdbc_ex03 {
+public class Jdbc_ex05_createTable {
 
-	//UPDATE//
 	private String dbUrl = "jdbc:mysql://localhost/test1";
+	
 	private String user = "dbadmin";
 	private String password = "2Wsxcde3";
-	private String stQuery = "update customer set email='hd@isracard.co.il' WHERE cust_id='7' ";
+	private String stQuery = "select * from customer";
 	
-	public Jdbc_ex03() { 
-
+	// TODO create table + permission for dbadmin;
+	
+	public Jdbc_ex05_createTable() {
 		try {
 
-			// Get a Connection to Database //
 			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
-
-			// Create a Statement object //
 			Statement myStatement = myConnection.createStatement();
+			ResultSet myResultSet = myStatement.executeQuery(stQuery);			
+			System.out.println("");
 
-			// executeUpdate - execute query //
-			int rowsAffected = myStatement.executeUpdate(stQuery);
 			
-			System.out.println("rows Affected :: " + rowsAffected);
-			System.out.println("update complete");
-
+			
+			
+			// ResultSet - close //
+			myResultSet.close();
 
 			// Statement close//
 			myStatement.close();
@@ -40,18 +39,17 @@ public class Jdbc_ex03 {
 		}
 		// import java.sql.SQLException; //
 		catch (SQLException e) {
-			System.out.println("ErrorCode :: " + e.getErrorCode());
-			System.out.println("LocalizedMessage :: " + e.getLocalizedMessage());
-			System.out.println("Message :: " + e.getMessage());
-			System.out.println("SQLState :: " + e.getSQLState());
 			e.printStackTrace();
 		}
 
 	}
 
+	/****
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		Jdbc_ex03 j = new Jdbc_ex03();
+		Jdbc_ex06_ps p = new Jdbc_ex06_ps();
 	}
 
 }
-

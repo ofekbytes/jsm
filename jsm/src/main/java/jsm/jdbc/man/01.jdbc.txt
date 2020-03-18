@@ -496,6 +496,30 @@ public class Jdbc {
 -- improved application performance. 
 
 
- 
+- instead of hard coding your sql values in your statement,
+  you can make use of a parameter place holders with a question mark ('?').
 
+// --------------------------------------------------- //
+//
+// example - set sql hard coding
+//
+ 
+select * from customer 
+where salary > 1000 and department = 'software';
+ 
+// --------------------------------------------------- //
+//
+// example - set sql parameter placeholders with question mark ('?'). 
+//
+ 
+select * from customer
+where salary > ? and department = ?
+
+
+// --------------------------------------------------- //
+//
+// example - prepared statements  
+//
+
+// create the prepared statment
 
