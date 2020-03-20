@@ -9,12 +9,13 @@ import java.sql.Statement;
 public class Jdbc_01_01_select {
 
 	//SELECT//
-	private String dbUrl = "jdbc:mysql://localhost/test1";
+	private String dbUrl = "jdbc:mysql://localhost:3306/test1"; //with port: 3306
+//	private String dbUrl = "jdbc:mysql://localhost/test1";
 	private String user = "jron";  //"dbadmin";
 	private String password = "koskas@1974.com"; //"2Wsxcde3";
 	private String stQuery = "select * from customer";
 
-	public Jdbc_01_01_select() {
+	public Jdbc_01_01_select(){
 
 		try {
 
