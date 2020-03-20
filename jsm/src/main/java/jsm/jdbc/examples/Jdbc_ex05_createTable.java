@@ -2,6 +2,7 @@ package jsm.jdbc.examples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -21,37 +22,19 @@ public class Jdbc_ex05_createTable {
 		try {
 			
 			Connection myConnection = DriverManager.getConnection(dbUrl, user, password);
-			Statement myStatement = myConnection.createStatement();
-//			ResultSet myResultSet = myStatement.executeQuery(stQuery);
-//			
-//			System.out.println("");
-//
-//			while (myResultSet.next()) {
-//
-//				// read Data by "column"
-//				System.out.print("" + myResultSet.getString("cust_id"));
-//				System.out.print(", " + myResultSet.getString("first_name"));
-//				System.out.print(", " + myResultSet.getString("last_name"));
-//				System.out.print(", " + myResultSet.getString("phone"));
-//				System.out.print(", " + myResultSet.getString("email"));				
-//				System.out.println("");
-//			}
-			
-			ResultSet myResultSet = myStatement.executeQuery(stCreate);			
-			
-//			int rowsAffected =  myStatement.executeUpdate(stCreate);
-			
-//			System.out.println("");
-//			System.out.println("rows Affected :: " + rowsAffected);
-			System.out.println("create a table complete");
 
+			PreparedStatement  myPreparedStatement = myConnection.prepareStatement(stCreate);
+			
+			int result = myPreparedStatement.executeUpdate();
 			
 			
-			// ResultSet - close //
-			myResultSet.close();
-
-			// Statement close//
-			myStatement.close();
+			System.out.println("create a table complete::: " + result);
+		
+			
+			
+			
+			// PreparedStatement close//
+			myPreparedStatement.close();
 
 			// Connection close//
 			myConnection.close();
