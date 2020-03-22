@@ -1,7 +1,7 @@
 package jsm.utility.math;
 
 public class Reverse {
-
+	
 	// constructor //
 	public Reverse() {
 		ReversePrimitiveNumber(123450);
@@ -86,6 +86,18 @@ public class Reverse {
 	private int powerOf(int powerOf) {
 		return ((int)Math.pow(10, powerOf));
 	}
+
+	
+	/****
+	 * 
+	 * @param args
+	 */
+	public static void main(String [] args) {
+		//Reverse r = new Reverse();		
+		Reverse r = new Reverse(1995);
+	}
+
+	
 	
 }// class
 
