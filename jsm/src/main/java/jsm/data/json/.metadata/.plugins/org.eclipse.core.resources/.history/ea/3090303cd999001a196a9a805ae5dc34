@@ -1,0 +1,33 @@
+
+
+---[ex1.manual]----
+
+
+- Gson have methods: 
+-- toJson() method - convert Java Object -to- JSON.
+-- fromJson() method - convert JSON -to- Java objects.
+
+
+--- example: Java Object -to- JSON.
+
+	Gson gson = new Gson();
+	
+	// 1. Java object to JSON file
+	gson.toJson(obj, new FileWriter("C:\\fileName.json"));
+	
+	// 2. Java object to JSON string
+	String json = gson.toJson(obj);
+	
+	
+--- example: JSON -to- Java Object. 
+
+	Gson gson = new Gson();
+
+	// 1. JSON file to Java object
+	Object object = gson.fromJson(new FileReader("C:\\fileName.json"), Object.class);
+	
+	// 2. JSON string to Java object
+	String json = "{'name' : 'mkyong'}";
+	Object object = gson.fromJson(json, Staff.class);
+
+

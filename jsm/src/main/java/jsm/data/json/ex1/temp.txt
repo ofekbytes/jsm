@@ -1,0 +1,235 @@
+
+
+package korona;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.ParseException;
+
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+public class ReadJsonFile {
+
+	public ReadJsonFile() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+		JsonParser jsonParser = new JsonParser();
+		
+		try {
+			Object obj = jsonParser.parse(new FileReader("data.json"));
+//			JSONObject jsonObject = (JsonObject) obj;
+			
+//			String stTotalCases = (String) jsonObject.get("total_cases");
+//			System.out.print(dbTotalCases);
+			
+		} 
+		catch (FileNotFoundException e) { e.printStackTrace(); } 
+		catch (IOException e) { e.printStackTrace(); } 
+//		catch (ParseException e) { e.printStackTrace(); } 
+		catch (Exception e) { e.printStackTrace(); }
+	}
+
+}
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+// json - read/write:
+
+https://www.youtube.com/watch?v=y96VcLgOJqA
+
+https://mkyong.com/java/how-to-parse-json-with-gson/
+
+
+
+// online json convertor
+http://www.jsonschema2pojo.org/
+
+
+package korona;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
+
+public class ReadJson {
+
+//	private double dbTotalCases;
+//	private double recoveryCases;
+
+	public ReadJson() {
+
+		Gson gson = new Gson();
+
+		try {
+				Reader reader = new FileReader("/home/yaron/git-ofekbytes/korona/korona/src/main/java/korona/data.json");
+				
+			// delete //
+			//Object object = gson.fromJson(new FileReader("/home/yaron/git-ofekbytes/korona/korona/src/main/java/korona/data.json"), Object.class);
+			// old path: /home/yaron/workspace-sts/korona/korona/src/data.json //
+			 
+			
+			
+			
+
+		} catch (JsonSyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonIOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+package korona;
+
+public class Data_old {
+
+	private String stTotalCases;  //total_cases
+	private String stRecoveryCases;  //recovery_cases
+	
+	
+
+	public String getStTotalCases() {
+		return stTotalCases;
+	}
+	
+	public void setStTotalCases(String stTotalCases) {
+		this.stTotalCases = stTotalCases;
+	}
+
+
+	public String getStRecoveryCases() {
+		return stRecoveryCases;
+	}
+
+	public void setStRecoveryCases(String stRecoveryCases) {
+		this.stRecoveryCases = stRecoveryCases;
+	}
+	
+	// constructor
+	public Data_old() { }
+
+}
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+package korona;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Data {
+
+@SerializedName("data")
+@Expose
+private Data_ data;
+@SerializedName("status")
+@Expose
+private String status;
+
+public Data_ getData() {
+return data;
+}
+
+public void setData(Data_ data) {
+this.data = data;
+}
+
+public String getStatus() {
+return status;
+}
+
+public void setStatus(String status) {
+this.status = status;
+}
+
+}
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+package korona;
+
+import java.io.FileReader;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class Korona {
+
+	public Korona() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public void printResult(double recovery_cases, double total_cases) {	
+		System.out.println ( (recovery_cases / total_cases) * 100 );
+	}
+	
+	
+	public void test1() {
+		
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("/home/yaron/git-ofekbytes/korona/korona/src/main/java/korona/data.json"));
+ 
+			JSONObject jsonObject = (JSONObject) obj;
+			JSONArray korona = (JSONArray) jsonObject.get("Company List");
+			
+//			Iterator<JSONObject> iterator = korona.iterator();
+//			while (iterator.hasNext()) {
+//				System.out.println(iterator.next());
+//			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	/****
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//ReadJson rj = new ReadJson();
+		
+		Korona k = new Korona();
+		k.test1();
+		
+		System.out.println("test");
+
+	}
+
+	
+}
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------

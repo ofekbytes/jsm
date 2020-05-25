@@ -1,0 +1,9 @@
+
+
+---[ex1.manual]----
+
+
+- Gson have methods: 
+-- toJson() method - convert Java Object -to- JSON.
+-- fromJson() method - convert JSON -to- Java objects.
+
