@@ -1,4 +1,5 @@
-package jcm.examples.socket.ex03ClientServerCient;
+package jsm.data.network.socket.ex03ClientServerCient;
+
 import java.io.BufferedReader;
 /***
  * ---[Socket Connection - Client Side]---

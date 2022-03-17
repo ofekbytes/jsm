@@ -1,4 +1,4 @@
-package jcm.examples.socket.ex03ClientServerCient;
+package jsm.data.network.socket.ex03ClientServerCient;
 
 import java.io.FileWriter;
 import java.io.IOException;

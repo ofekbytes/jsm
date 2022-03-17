@@ -1,4 +1,4 @@
-package ex1;
+package jsm.data.json.ex1.src.main.java.ex1;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

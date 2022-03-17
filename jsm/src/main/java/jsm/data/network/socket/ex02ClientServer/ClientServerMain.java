@@ -1,4 +1,4 @@
-package jcm.examples.socket.ex02ClientServer;
+package jsm.data.network.socket.ex02ClientServer;
 
 import java.io.IOException;
 

@@ -1,4 +1,5 @@
-package jcm.examples.socket.ex03ClientServerCient;
+package jsm.data.network.socket.ex03ClientServerCient;
+
 /***
  * ---[Socket Connection - Server Side]---
  * ---[Socket Connection - two way (Client to Server -and- Server to Client) ]---
