@@ -2,7 +2,7 @@ package jsm.utility.temp;
 
 import java.util.HashMap;
 
-import jsm.Jsm;
+import jsm.jsmMain.JsmMain;
 
 public class MyHashMap {
 

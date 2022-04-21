@@ -84,7 +84,7 @@ public class Reverse {
 	 * @return
 	 */
 	private int powerOf(int powerOf) {
-		return ((int)Math.pow(10, powerOf));
+		return ((int)MathMain.pow(10, powerOf));
 	}
 
 	

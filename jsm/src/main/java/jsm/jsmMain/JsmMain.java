@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jsm;
+package jsm.jsmMain;
 
 import java.math.MathContext;
 
@@ -16,10 +16,10 @@ import jsm.utility.temp.Utf16;
  * @author Kessler-yaron (jron)
  *
  */
-public class Jsm 
+public class JsmMain 
 {
 	// Jsm() constructor
-	public Jsm() {
+	public JsmMain() {
 //		RandomNumbers rn = new RandomNumbers(1,22);		
 //		RandomNumbers rn = new RandomNumbers();
 //		FizzBuzz fb = new FizzBuzz();
@@ -31,7 +31,7 @@ public class Jsm
 
 	// jsm() main() method.
 	public static void main(String[] args) {
-		Jsm jsm = new Jsm();
+		JsmMain jsm = new JsmMain();
 //		Test t = new Test();
 	}
 }
