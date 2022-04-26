@@ -23,7 +23,7 @@ public class JsmMain
 //		RandomNumbers rn = new RandomNumbers(1,22);		
 //		RandomNumbers rn = new RandomNumbers();
 //		FizzBuzz fb = new FizzBuzz();
-		Reverse reverse = new Reverse(12345);
+//		Reverse reverse = new Reverse(12345);
 
 		//FizzBuzz fb = new FizzBuzz();
 		//memoryBoxesInformation mbi = new memoryBoxesInformation();		

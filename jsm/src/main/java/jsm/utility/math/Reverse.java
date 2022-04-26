@@ -2,60 +2,62 @@ package jsm.utility.math;
 
 public class Reverse {
 	
-	// constructor //
-	public Reverse() {
-		ReversePrimitiveNumber(123450);
-	}
-
-	// constructor + argument //
-	public Reverse(int sourceNumber) {
-		ReversePrimitiveNumber(sourceNumber);
-	}
+//	// constructor //
+//	public Reverse() {
+//		ReversePrimitiveNumber(123450);
+//	}
+//
+//	// constructor + argument //
+//	public Reverse(int sourceNumber) {
+//		ReversePrimitiveNumber(sourceNumber);
+//	}
 
 	
-	/**
-	 **
-	 ** @param sourceNumber
-	 **/
-	private void ReversePrimitiveNumber(int sourceNumber) {
-		int totalDigits = 0;
-		int tragetNumber = 0;
+/// reverseNumber	
+//	/**
+//	 **
+//	 ** @param sourceNumber
+//	 **/
+//	private void ReversePrimitiveNumber(int sourceNumber) {
+//		int totalDigits = 0;
+//		int tragetNumber = 0;
+//
+//		System.out.println("The primitive number Entered: " + sourceNumber);
+//		
+//		totalDigits = countTotalDigitsInNumber(sourceNumber);
+//		tragetNumber = reverseNumber (totalDigits, sourceNumber);
+//		
+//		System.out.println("The primitive number Entered After reverse: " + sourceNumber +  "  "  + tragetNumber); 
+//	}
+	
 
-		System.out.println("The primitive number Entered: " + sourceNumber);
-		
-		totalDigits = countTotalDigitsInNumber(sourceNumber);
-		tragetNumber = reverseNumber (totalDigits, sourceNumber);
-		
-		System.out.println("The primitive number Entered After reverse: " + sourceNumber +  "  "  + tragetNumber); 
-	}
-	
-	
-	/***
-	 * 
-	 * @param totalDigits
-	 * @param sourceNumber
-	 * @return
-	 */
-	private int reverseNumber(int totalDigits, int sourceNumber) {
-		
-		int srcNumber = sourceNumber;
-		int returnNumber = 0;
-		int currentDigit;
-		
-		System.out.println("totalDigits::: " + totalDigits);
-		
-		for (int number=totalDigits-1; number>-1; number--) {
-			
-			currentDigit = srcNumber % 10;
-			
-			returnNumber += (currentDigit * powerOf(number)) ;
-			srcNumber = srcNumber / 10; 
-			
-			System.out.println("currentDigit >> " + currentDigit + "  " + returnNumber);						
-		}
-		
-		return returnNumber;
-	}
+/// powerOf()
+//	/***
+//	 * 
+//	 * @param totalDigits
+//	 * @param sourceNumber
+//	 * @return
+//	 */
+//	private int reverseNumber(int totalDigits, int sourceNumber) {
+//		
+//		int srcNumber = sourceNumber;
+//		int returnNumber = 0;
+//		int currentDigit;
+//		
+//		System.out.println("totalDigits::: " + totalDigits);
+//		
+//		for (int number=totalDigits-1; number>-1; number--) {
+//			
+//			currentDigit = srcNumber % 10;
+//			
+//			returnNumber += (currentDigit * powerOf(number)) ;
+//			srcNumber = srcNumber / 10; 
+//			
+//			System.out.println("currentDigit >> " + currentDigit + "  " + returnNumber);						
+//		}
+//		
+//		return returnNumber;
+//	}
 
 	
 	
@@ -78,24 +80,25 @@ public class Reverse {
 	}
 
 	
-	/***
-	 * 
-	 * @param powerOf
-	 * @return
-	 */
-	private int powerOf(int powerOf) {
-		return ((int)MathMain.pow(10, powerOf));
-	}
+/// powerOf()	
+//	/***
+//	 * 
+//	 * @param powerOf
+//	 * @return
+//	 */
+//	private int powerOf(int powerOf) {
+//		return ((int)MathMain.pow(10, powerOf));
+//	}
 
-	
-	/****
-	 * 
-	 * @param args
-	 */
-	public static void main(String [] args) {
-		//Reverse r = new Reverse();		
-		Reverse r = new Reverse(1995);
-	}
+//	
+//	/****
+//	 * 
+//	 * @param args
+//	 */
+//	public static void main(String [] args) {
+//		//Reverse r = new Reverse();		
+//		Reverse r = new Reverse(1995);
+//	}
 
 	
 	
